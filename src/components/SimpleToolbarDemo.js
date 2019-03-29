@@ -109,10 +109,10 @@ class SimpleToolbarDemo extends React.Component {
   };
   render() {
     return (
-      <Toolbar className={css(flexStyles.justifyContentSpaceBetween, spacingStyles.mxXl, spacingStyles.myMd)}>
+      <Toolbar className={css(flexStyles.justifyContentSpaceBetween, spacingStyles.mxXs, spacingStyles.myXs)}>
         <ToolbarGroup>
-          <ToolbarItem className={css(spacingStyles.mrXl)}>{this.buildSearchBox()}</ToolbarItem>
-          <ToolbarItem className={css(spacingStyles.mrMd)}>{this.buildDropdown()}</ToolbarItem>
+          <ToolbarItem className={css(spacingStyles.mlXs, spacingStyles.mrXs)}>{this.buildSearchBox()}</ToolbarItem>
+          <ToolbarItem className={css(spacingStyles.mlXs, spacingStyles.mrXs)}>{this.buildDropdown()}</ToolbarItem>
           <ToolbarItem>
             <Button variant="plain" aria-label="Sort A-Z">
               <SortAlphaDownIcon />
@@ -125,20 +125,20 @@ class SimpleToolbarDemo extends React.Component {
               <TableIcon />
             </Button>
           </ToolbarItem>
-          <ToolbarItem className={css(spacingStyles.mxMd)}>
+          <ToolbarItem className={css(spacingStyles.mlXs, spacingStyles.mrXs)}>
             <Button variant="plain" aria-label="Insert Bulleted List">
               <ListUlIcon />
             </Button>
           </ToolbarItem>
-          <ToolbarItem>
+          <ToolbarItem className={css(spacingStyles.mlXs, spacingStyles.mrXs)}>
             <Button variant="plain" aria-label="Action 1">
               Action
             </Button>
           </ToolbarItem>
-          <ToolbarItem className={css(spacingStyles.mxMd)}>
+          <ToolbarItem className={css(spacingStyles.mlXs, spacingStyles.mrXs)}>
             <Button aria-label="Action 2">Action</Button>
           </ToolbarItem>
-          <ToolbarItem>{this.buildKebab()}</ToolbarItem>
+          <ToolbarItem className={css(spacingStyles.mlXs, spacingStyles.mrXs)}>{this.buildKebab()}</ToolbarItem>
         </ToolbarGroup>
       </Toolbar>
     );

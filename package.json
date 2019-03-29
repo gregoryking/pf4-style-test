@@ -5,6 +5,7 @@
   "dependencies": {
     "@patternfly/patternfly": "^1.0.250",
     "@patternfly/react-core": "^2.9.2",
+    "@patternfly/react-styles": "^2.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
